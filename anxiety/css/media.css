@@ -1,0 +1,205 @@
+@media (max-width: 768px) {
+    body {
+        padding: 25px;
+    }
+    .hidden-xs {
+        display: none !important;
+    }
+    .visible-xs-table {
+        display: table;
+    }
+    .visible-xs {
+        display: block;
+    }
+    .section-content {
+        padding: 25px;
+        min-width: 270px;
+    }
+    .score-container {
+        justify-content: center;
+    }
+    .score-container div {
+        width: 100%;
+    }
+    .score-container .count {
+        font-size: 70px;
+    }
+    .score-container h2 {
+        margin: 20px 0 0;
+        font-size: 16px;
+    }
+    .progress-container {
+        height: 25px;
+    }
+    .anxiety-type-container {
+        text-align: center;
+    }
+    .anxiety-type-container h3 {
+        text-align: center;
+    }
+    .anxiety-type-container span.type-container {
+        width: 100%;
+        font-size: 28px;
+    }
+    .scores-by-categories h5 {
+        text-align: center;
+    }
+    .section-content .btn {
+        width: 100%;
+        font-size: 28px;
+    }
+    .section-content .frame-wrapper {
+        width: 220px;
+        height: 165px;
+    }
+    .footer {
+        padding: 0 15px;
+    }
+    .footer ul li {
+        border-left: none;
+    }
+
+    .btn-with-image {
+        width: 226px !important;
+        height: 60px !important;
+        padding: 9px 4px 11px 7px !important;
+        margin: 0 auto !important;
+    }
+    .section-description h2 {
+        font-size: 30px;
+        width: 100%;
+        margin: 0;
+        padding-right: 0;
+    }
+    .section-description h4 {
+        width: 100%;
+        font-size: 20px;
+    }
+    .section-description img.bg-image {
+        position: relative;
+        max-width: 100%;
+        right: 0;
+        top: 0
+    }
+    .section-description h5 {
+        font-size: 20px;
+    }
+    .section-description ul.description-steps li {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .section-description .image-container,
+    .section-description .text-container{
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .article h2 {
+        font-size: 40px;
+    }
+    .article h3 {
+        font-size: 30px;
+    }
+
+    .report h3 {
+        font-size: 30px;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .form-group label {
+        width: 100%;
+        text-align: left;
+        float: none;
+    }
+    .form-group .form-control {
+        width: 100%;
+        float: none;
+    }
+    .form-group .form-control input {
+        margin: 0;
+    }
+    form p.description {
+        padding-top: 50px;
+        padding-left: 0;
+        margin: 15px auto;
+        width: 100%;
+        text-align: center;
+        background-size: 31px 41px;
+        background-position: center top;
+    }
+
+    .report ul.banners li {
+        width: 100%;
+        border-bottom: 1px solid #000;
+        border-left: none;
+    }
+    .report ul.banners li:last-child {
+        border: none;
+    }
+
+    .question-steps h2 {
+        font-size: 30px;
+    }
+    .question-steps h3 {
+        font-size: 24px;
+    }
+    .question-steps .description {
+        font-size: 20px;
+    }
+    .question-steps .answer-list {
+        padding: 0
+    }
+    .answer-list.blocks li {
+        width: 100%;
+        padding: 0;
+    }
+    .products-packs-section .products-list .product {
+        margin-bottom: 20px;
+    }
+    .products-packs-section .products-list .product p img {
+        float: none;
+        width: 100%;
+    }
+    .products-packs-section .products-list .product.bronze-product {
+        border-right: 2px dashed #000;
+        border-radius: 10px;
+    }
+    .products-packs-section .products-list .product.silver-product {
+        border-left: 2px dashed #000;
+        border-radius: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .section-description h2 {
+        font-size: 40px;
+    }
+    .section-description h4 {
+        width: 430px;
+        font-size: 28px;
+    }
+    .section-description img.bg-image {
+        top: 100px;
+        width: 200px;
+    }
+    .question-steps .steps-progress li span {
+        font-size: 18px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .section-description h2 {
+        font-size: 40px;
+    }
+    .section-description h4 {
+        width: 600px;
+        font-size: 28px;
+    }
+    .section-description img.bg-image {
+        top: 100px;
+        width: 200px;
+    }
+}
+@media (min-width: 1200px) {
+}

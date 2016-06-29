@@ -1,0 +1,648 @@
+ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,
+ blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,
+ img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,
+ b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,
+ caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,
+ footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;
+	background-position:0 0;background-repeat:no-repeat;background-color:transparent
+}
+input[type="checkbox"],
+input[type="radio"] {
+	vertical-align:middle
+}
+input {margin:0;padding:0;border:0;outline:0;-webkit-appearance: none;}
+select,textarea {margin:1px;padding:3px;outline:0;-webkit-appearance: none;}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block}
+ol,ul {list-style:none;}
+table {border-collapse:collapse;border-spacing:0}
+
+h1,h2,h3,h4,h5 {font-weight:700;line-height:normal}
+h1 {font-size:2em}
+h2 {font-size:1.5em}
+h3 {font-size:1.17em}
+h4 {font-size:1em}
+h5 {font-size:0.83em}
+h6 {font-size:0.67em}
+
+body {font:12px Arial,Tahoma,Verdana;text-align:left;color:#333;background:#fff;min-width:970px;line-height:1}
+a {color:#0a82a8;text-decoration:underline}
+a:hover {text-decoration:none}
+
+/*__________ Reset #END __________*/
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+.no-bg {background:none !important}
+.margin-no {margin:0 !important}
+.left {float:left}
+.right {float:right}
+.row{width:100%; float:left;}
+/*__________ General __________*/
+
+@font-face {
+	font-family: 'FrutigerLT-Cn';
+	src: url('../fonts/FrutigerLT-Cn.eot?') format('eot'), 
+	     url('../fonts/FrutigerLT-Cn.woff') format('woff'), 
+	     url('../fonts/FrutigerLT-Cn.ttf')  format('truetype'),
+	     url('../fonts/FrutigerLT-Cn.svg#FrutigerLT-Cn') format('svg');
+}
+
+.wrapper{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.header{
+	float: left;
+	width: 100%:
+}
+
+.logo{
+	margin-top: 16px;
+	float:left;
+}
+
+.title {
+    float: right;
+    font: 22.7px times new roman;
+	margin-top: 13px;
+    text-transform: uppercase;
+	text-align: right;
+	color: #9C1530;
+	width: 658px;
+}
+
+.title span {
+    display: block;
+    font: 18px/25px times new roman;
+	color: #373737;
+}
+
+.nav-bar{
+	background: url(../images/bg-nav-bar.png) repeat-x top right;
+	float: left;
+    height: 47px;
+	margin-top: 12px;
+    width: 100%;
+}
+
+.nav-bar ul{
+	float:left;
+	width: 400px;
+	margin-top: 7px;
+}
+
+.nav-bar li a{
+	font: 15px 'Trebuchet MS';
+	padding: 0 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #474747;
+	float: left;
+}
+
+.subscribe {
+    background: #FCFCFA url(../images/ico/mail.png) no-repeat 109px 2px;
+    border: 1px solid #7A7A7A;
+    float: left;
+    margin: 6px 0 0 46px;
+    text-decoration: none;
+    text-transform: uppercase;
+	padding-bottom: 8px;
+	width: 138px;
+}
+
+.subscribe span {
+    color: #474747;
+    float: left;
+    font: 15.3px arial;
+    padding: 6px 0 0 2px;
+}
+
+.organization {
+	background: url(../images/bg-organization.png) no-repeat top center;
+	height: 35px;
+    float: right;
+    margin: 5px 31px 0 0;
+    width: 359px;
+	text-decoration: none;
+	position: relative;
+}
+
+.organization p {
+    color: #fdfafa;
+    float: left;
+    font: 15.2px sans-serif;
+	margin: 6px 0 0 9px;
+    text-transform: uppercase;
+}
+
+.organization span {
+    font: 14.9px 'Comic Sans MS';
+    text-transform: none;
+}
+
+.organization:before{
+	content:"";
+	background: url(../images/castle.png) no-repeat top right;
+    height: 34px;
+    width: 28px;
+	position: absolute;
+	right: 4px;
+    top: 0;
+}
+
+/*---content----*/
+
+.content{
+	float: left;
+	width: 100%;
+}
+
+.form-search {
+    border: 2px solid #97142D;
+    float: left;
+    margin: 7px 0 0 445px;  
+}
+
+.form-search input {
+    font: italic 25px arial;
+    padding-left: 8px;
+	color: #97142D;
+	width: 378px;
+}
+
+.nav-soc{
+	float: right;
+	width: 157px;
+	margin-top: 8px;
+}
+
+.nav-soc li a{
+	background: url(../images/ico/soc-sprite.png) no-repeat 0 0;
+	height: 37px;
+    width: 39px;
+	float: left;
+	margin-right: 4px;
+}
+
+.nav-soc li:nth-child(2) a{
+	background-position: -43px 0;
+}
+.nav-soc li:nth-child(3) a{
+	background-position: -86px 0;
+}
+
+.sidebar-left {
+	float: left;
+    background:	#808080;
+    padding-bottom:11px;
+    margin-top: 12px;
+    width: 350px;
+	position: relative;
+}
+
+.img-box {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    float: left;
+    height: 284px;
+    margin-top: 7px;
+    width: 347px;
+}
+
+.news {
+    color: #FFFFFF;
+    font: bold 24px arial;
+    left: 14px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 16px;
+}
+
+.news-day{
+	color: #FFFFFF;
+    float: left;
+    left: 0;
+    position: absolute;
+    top: 231px;
+    width: 100%;
+	background: rgba(67,66,67, 0.9);
+	padding-bottom: 10px;
+}
+
+.news-day h3{
+	font: bold 18px arial;
+	margin: 6px 0 0 7px;
+}
+
+.news-day p{
+	font: bold 18px arial;
+	margin-left: 8px;
+	float: left;
+}
+
+.news-day span {
+    float: right;
+    font: bold 12px arial;
+    margin: 5px 8px 0 0;
+}
+
+.img-block{
+	width: 158px;
+	height: 67px;
+	float: left;
+	margin: 6px 0 0 14px;
+	color: #fff;
+	position: relative;
+}
+
+.img-block p {
+    font: bold 13px arial;
+    left: 0;
+    position: absolute;
+    top: 43px;
+}
+
+.img-block:last-child{
+	margin-left: 6px;
+}
+
+.info-box {
+    background: none repeat scroll 0 0 #808080;
+    float: left;
+    margin: 8px 0 0 22px;
+    width: 595px;
+}
+
+.info-block {
+    margin-top: 8px;
+	position: relative;
+}
+
+.img-boxed{
+	height: 283px;
+    width: 593px;
+	position:relative;
+}
+.img-boxed .info-detail {
+	position:absolute;
+	bottom:1px;
+	color:#fff;
+	background:url(../images/info_bg.png) repeat-x 0 0;
+	height:84px;
+	width:586px;
+	margin:0 4px;
+}
+.img-boxed .info-detail b {
+	display:block;
+	width:115px;
+	background:url(../images/info_letter.jpg) no-repeat top center;
+	border-right:3px solid #fff;
+	float:left;
+	margin-top:5px;
+	text-align:center;
+	padding:60px 0 0 0;
+}
+.img-boxed .info-detail p {
+	margin:2px 0 7px 17px;
+	font:bold 22px 'FrutigerLT-Cn';
+	display:block;
+	float:left;
+	width:450px;
+}
+.img-boxed .info-detail span {
+	display:block;
+	margin-left:20px;
+	float:left;
+}
+.featured {
+    font: bold 22.3px arial;
+    left: 11px;
+    top: 6px;
+}
+
+.slider-block{
+	background: #E4E4E4;
+	width: 100%;
+	float: left;
+	padding-bottom: 12px;
+	position: relative;
+}
+
+.slider-block .img-block{
+	width: 183px;
+	margin-left: 0;
+}
+
+.slider-block .middle{
+	margin-left: 7px;
+}
+
+.slider-block .prev,
+.slider-block .next,
+.main-slider .prev,
+.main-slider .next{
+	background: url(../images/arrow.png) no-repeat top left;
+    height: 38px; 
+    position: absolute;
+    top: 20px;
+    width: 38px;
+    z-index: 1000;
+}
+
+.slider-block .prev{
+	left: 0;
+}
+
+.slider-block .next,
+.main-slider .next{
+	background-position: -40px 0;
+	right:0;
+}
+
+.main-slider .prev{
+	left: -11px;
+    top: 29px;
+}
+
+.main-slider .next{
+	top: 29px;
+}
+
+.project{
+	background: #97142D url(../images/ico/project-ico.png) no-repeat 16px 37px;
+	color: #fcfefe;
+    float: left;
+    font: 21px 'FrutigerLT-Cn';
+    margin-top: 22px;
+    padding: 35px 0 28px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 104px;
+}
+
+.main-slider{
+	float: left;
+	margin: 20px 0 0 12px;
+	position:relative;
+}
+
+.box{
+	width: 144px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	font: 17px 'FrutigerLT-Cn';
+	color: #4c4b4b;
+	margin-right: 16px;
+	float: left;
+}
+.box:nth-child(5){
+	margin-right: 0;
+}
+.box img{
+	width: 144px;
+	height: 93px;
+}
+
+.nav-list{
+	background: background: #e4eff8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e4eff8 0%, #dde8f2 35%, #d6e3ed 49%, #c7d5df 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4eff8), color-stop(35%,#dde8f2), color-stop(49%,#d6e3ed), color-stop(100%,#c7d5df)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e4eff8 0%,#dde8f2 35%,#d6e3ed 49%,#c7d5df 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e4eff8 0%,#dde8f2 35%,#d6e3ed 49%,#c7d5df 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e4eff8 0%,#dde8f2 35%,#d6e3ed 49%,#c7d5df 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e4eff8 0%,#dde8f2 35%,#d6e3ed 49%,#c7d5df 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4eff8', endColorstr='#c7d5df',GradientType=0 ); /* IE6-9 */
+	height: 43px;
+	width: 966px;
+	margin-top: 19px;
+	border-bottom: 7px solid #474747;
+	float: left;
+}
+
+.nav-list ul{
+text-align: center;
+}
+
+.nav-list .active{
+	background: #97142D url(../images/ico/ico-active.png) no-repeat 13px 12px;
+	color: #fff;
+}
+
+.nav-list li a {
+    color: #474747;
+    float: left;
+    text-decoration: none;
+    text-transform: uppercase;
+	font: 20px 'FrutigerLT-Cn';
+	padding: 9px 9px 9px 14px;
+	border-right: 1px solid #6B6E70;
+	width: 135px;
+}
+
+.nav-list li:nth-child(2) a{
+	background: url(../images/ico/ico-translation.png) no-repeat 14px 12px;
+}
+
+.nav-list li:nth-child(3) a{
+	background: url(../images/ico/ico-search.png) no-repeat 14px 12px;
+}
+
+.nav-list li:nth-child(4) a{
+	background: url(../images/ico/ico-tv.png) no-repeat 9px 12px;
+}
+
+.nav-list li:nth-child(5) a{
+	background: url(../images/ico/ico-gl.png) no-repeat 9px 12px;
+}
+
+.nav-list li:last-child a{
+	border-right: 0;
+}
+
+.nav-list li a:hover{
+	color: #fff;
+}
+
+.nav-list li:nth-child(2) a:hover{
+	background: #97142D url(../images/ico/ico-translation-hover.png) no-repeat 9px 8px;
+}
+
+.nav-list li:nth-child(3) a:hover{
+	background: #97142D url(../images/ico/ico-search-hover.png) no-repeat 9px 8px;
+}
+
+.nav-list li:nth-child(4) a:hover{
+	background: #97142D url(../images/ico/ico-tv-hover.png) no-repeat 6px 6px;
+}
+
+.nav-list li:nth-child(5) a:hover{
+	background: #97142D url(../images/ico/ico-gl-hover.png) no-repeat 9px 12px;
+}
+
+.post-navi{
+	float: left;
+	margin: 21px 0 0 16px;
+	text-align: left;
+}
+
+.post-navi li{
+	float: left;
+	width: 294px;
+	margin: 0 38px 22px 0;
+	min-height: 286px;
+}
+
+.post-navi img{
+	width: 294px;
+	height: 179px;
+}
+
+.post-navi p{
+	text-transform: uppercase;
+	font: 14.9px 'FrutigerLT-Cn';
+	margin-top: 8px;
+	color: #474747;
+}
+
+.post-navi span {
+    color: #757575;
+    display: block;
+    font: 13.5px 'FrutigerLT-Cn';
+    margin-top: 4px;
+}
+
+.post-navi li:nth-child(3n+3){
+	margin-right: 0;
+}
+
+/*-------footer-------*/
+
+.footer{
+	background: #565354; /* Old browsers */
+	background: -moz-linear-gradient(top,  #565354 0%, #575455 13%, #585658 16%, #585556 18%, #5c5b5c 33%, #5b5a5b 36%, #5e5d5e 40%, #5d5c5d 42%, #636061 54%, #636263 64%, #666364 64%, #646364 67%, #696667 77%, #6c6a6b 99%, #c4c2c3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#565354), color-stop(13%,#575455), color-stop(16%,#585658), color-stop(18%,#585556), color-stop(33%,#5c5b5c), color-stop(36%,#5b5a5b), color-stop(40%,#5e5d5e), color-stop(42%,#5d5c5d), color-stop(54%,#636061), color-stop(64%,#636263), color-stop(64%,#666364), color-stop(67%,#646364), color-stop(77%,#696667), color-stop(99%,#6c6a6b), color-stop(100%,#c4c2c3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #565354 0%,#575455 13%,#585658 16%,#585556 18%,#5c5b5c 33%,#5b5a5b 36%,#5e5d5e 40%,#5d5c5d 42%,#636061 54%,#636263 64%,#666364 64%,#646364 67%,#696667 77%,#6c6a6b 99%,#c4c2c3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #565354 0%,#575455 13%,#585658 16%,#585556 18%,#5c5b5c 33%,#5b5a5b 36%,#5e5d5e 40%,#5d5c5d 42%,#636061 54%,#636263 64%,#666364 64%,#646364 67%,#696667 77%,#6c6a6b 99%,#c4c2c3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #565354 0%,#575455 13%,#585658 16%,#585556 18%,#5c5b5c 33%,#5b5a5b 36%,#5e5d5e 40%,#5d5c5d 42%,#636061 54%,#636263 64%,#666364 64%,#646364 67%,#696667 77%,#6c6a6b 99%,#c4c2c3 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #565354 0%,#575455 13%,#585658 16%,#585556 18%,#5c5b5c 33%,#5b5a5b 36%,#5e5d5e 40%,#5d5c5d 42%,#636061 54%,#636263 64%,#666364 64%,#646364 67%,#696667 77%,#6c6a6b 99%,#c4c2c3 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565354', endColorstr='#c4c2c3',GradientType=0 ); /* IE6-9 */
+	height: 122px;
+	float: left;
+	width: 100%;
+}
+
+.menu{
+	float: left;
+	margin-top: 24px;
+}
+
+.menu li {
+	float: left;	
+}
+
+.menu li a {
+    border-right: 2px solid #ABA9AA;
+    color: #D5D3D3;
+    display: block;
+    font: 13.6px/13px 'FrutigerLT-Cn';
+    height: 13px;
+    padding: 0 3px;
+    text-decoration: none;
+}
+.menu li a:hover,
+.nav-bar li a:hover {
+text-decoration: underline;
+}
+.menu li:last-child a,
+.navigation li:last-child a{
+	border-right: none;
+}
+
+.footer-soc{
+	float: right;
+    margin: 20px 30px 0 0;
+}
+
+.footer-soc li{
+	float: left;
+	padding-left: 4px;
+}
+
+.footer-soc li a {
+    background: url(../images/ico/social-sprite.png) no-repeat left top;
+    display: block;
+    height: 25px;
+    width: 25px;
+}
+
+.footer-soc li:nth-child(2) a{
+	background-position: -25px 0;
+}
+.footer-soc li:nth-child(3) a{
+	background-position: -50px 0;
+}
+
+.footer-soc li a:hover{
+	background: url(../images/ico/social-sprite-hover.png) no-repeat -1px -1px;
+}
+
+.footer-soc li:nth-child(2) a:hover{
+	background-position: -30px -1px;
+}
+
+.footer-soc li:nth-child(3) a:hover{
+	background-position: -59px -1px;
+}
+
+.navigation{
+	margin: 90px 31px 0 0;
+}
+
+.navigation li {
+    float: left;
+    margin-left: 3px;
+}
+
+.navigation li a{
+	font: 11.4px/19px 'FrutigerLT-Cn';
+	text-decoration: none;
+	color: #D9D7D7;
+	border-right: 2px solid #ABA9AA;
+	padding-right: 3px;
+}
+
+.slider-block .list_carousel, 
+.slider-block .caroufredsel_wrapper {
+	width: 563px!important;
+	margin-left: 15px;
+}
+.slider-block .list_carousel li {
+	width: 578px;
+	float: left;
+	margin-right: 20px;
+ }
+ 
+ .main-slider .list_carousel, 
+.main-slider .caroufredsel_wrapper {
+	width: 785px!important;
+
+}
+.main-slider .list_carousel li {
+	width: 785px;
+	float: left;
+	margin-right: 20px;
+ }
+
+ .main-slider #next {
+	right: -15px
+ }

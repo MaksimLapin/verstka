@@ -1,0 +1,221 @@
+ul.menu {
+  margin-top:12px;
+  margin-left:30px;
+  clear:both;
+  width: 100%;
+  height: 28px;
+  background: transparent url("../images/menuline.jpg");
+  z-index: 100;
+  font-size:14px;
+}
+
+.menu_items {
+	background: url("../images/menu.png") no-repeat scroll 0 0 transparent;
+	width: 970px;
+	height: 34px;
+}
+
+.menu {
+	padding-top: 5px;
+	padding-left: 190px;
+}
+
+ul.menu a, ul.menu a:link, ul.menu a:hover, ul.menu a:visited, ul.menu a:active {
+	color: black;
+    padding-right: 10px; 
+}
+
+ul.menu a:hover {
+    color: white;
+}
+
+ul.menu li {
+	padding: 0;
+	padding-left: 19px;
+	margin: 0;
+	background: none;	
+	float: left;
+	height: 34px;
+	padding-top: 4px;
+
+}
+
+ul.menu .expanded {
+	display: block;
+	padding-right: 10px;
+}
+
+ul.menu li:hover {
+	background: none repeat scroll 0 0 #999999;  	
+}
+
+ul.menu li {
+	/*height: 34px;*/
+}
+
+
+/** customize style / layout here */
+
+a.menu, ul.menu li > a, a.mainlevel_current-son-of-suckerfish-horizontal, span.menu,
+a.menu:link, a.mainlevel_active-son-of-suckerfish-horizontal:link, a.mainlevel_current-son-of-suckerfish-horizontal:link,
+a.menu:visited, a.mainlevel_active-son-of-suckerfish-horizontal:visited, a.mainlevel_current-son-of-suckerfish-horizontal:visited,
+a.menu:hover, a.mainlevel_active-son-of-suckerfish-horizontal:hover, a.mainlevel_current-son-of-suckerfish-horizontal:hover,
+a.sublevel-son-of-suckerfish-horizontal, a.sublevel_active-son-of-suckerfish-horizontal, a.sublevel_current-son-of-suckerfish-horizontal, span.sublevel-son-of-suckerfish-horizontal,
+a.sublevel-son-of-suckerfish-horizontal:link, a.sublevel_active-son-of-suckerfish-horizontal:link, a.sublevel_current-son-of-suckerfish-horizontal:link,
+a.sublevel-son-of-suckerfish-horizontal:visited, a.sublevel_active-son-of-suckerfish-horizontal:visited, a.sublevel_current-son-of-suckerfish-horizontal:visited,
+a.sublevel-son-of-suckerfish-horizontal:hover, a.sublevel_active-son-of-suckerfish-horizontal:hover, a.sublevel_current-son-of-suckerfish-horizontal:hover {
+
+	text-align: left;
+	text-decoration: none;
+	font-weight: bold;
+    line-height: 24px;
+	display: block;
+}
+
+a.menu, a.mainlevel_active-son-of-suckerfish-horizontal, a.mainlevel_current-son-of-suckerfish-horizontal, span.menu {
+}
+
+a.sublevel-son-of-suckerfish-horizontal, a.sublevel_active-son-of-suckerfish-horizontal, a.sublevel_current-son-of-suckerfish-horizontal, span.sublevel-son-of-suckerfish-horizontal {
+	height: 1%;	/* this is required for the IE to cause the "hasLayout" property and make the whole anchor clickable - "Holly Hack" */
+}
+
+#active_menu-son-of-suckerfish-horizontal,
+a.mainlevel_active-son-of-suckerfish-horizontal, a.mainlevel_current-son-of-suckerfish-horizontal,
+a.mainlevel_active-son-of-suckerfish-horizontal:link, a.mainlevel_current-son-of-suckerfish-horizontal:link,
+a.mainlevel_active-son-of-suckerfish-horizontal:visited, a.mainlevel_current-son-of-suckerfish-horizontal:visited,
+a.mainlevel_active-son-of-suckerfish-horizontal:hover, a.mainlevel_current-son-of-suckerfish-horizontal:hover,
+a.sublevel_active-son-of-suckerfish-horizontal, a.sublevel_current-son-of-suckerfish-horizontal,
+a.sublevel_active-son-of-suckerfish-horizontal:link, a.sublevel_current-son-of-suckerfish-horizontal:link,
+a.sublevel_active-son-of-suckerfish-horizontal:visited, a.sublevel_current-son-of-suckerfish-horizontal:visited,
+a.sublevel_active-son-of-suckerfish-horizontal:hover, a.sublevel_current-son-of-suckerfish-horizontal:hover {
+}
+
+ul.menu, .menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+	z-index: 100;
+	font-weight: bold;
+}
+
+ul.menu li li {
+  padding: 0 0.5em;
+	position: relative;
+	display: block;
+	/*width: 19em;*/
+}
+
+
+ul.menu ul {
+	display: block;
+	position: absolute;
+	left: -999em;
+	margin-left: -19px;
+	/*margin-top: 1px;*/
+	width: 220px;
+	height: auto;
+	z-index: 101;
+	border: 1px solid silver;
+	background: #999999;
+	font-weight: bold;
+
+}
+
+ul.menu ul ul {
+	display: block;
+	position: static;
+	margin: 0;
+  width: 20em;
+	height: auto;
+	border: none;
+	background: #f0f0f0;
+}
+ul.menu ul ul li {
+  font-size: 9px;
+}
+
+ul.menu li li ul {
+/*	margin: -1.8em 0 0 10em;
+	z-index: 102;*/
+}
+
+
+/** IE7.0 workaround */
+ul.menu li:hover, ul.menu li.hover {
+	position: static;
+}
+
+
+/** general on-mouse-over display */
+
+ul.menu li:hover ul,
+ul.menu li.hover ul {
+	left: auto;
+}
+
+ul.menu li:hover ul ul,
+ul.menu li.hover ul ul {
+	left: -999em;
+}
+
+ul.menu li:hover ul li:hover ul,
+ul.menu li.hover ul li.hover ul {
+	left: auto;
+}
+
+
+ul.menu, ul.menu li li {
+	clear: left;
+}
+
+/** separator */
+span.menu, span.sublevel-son-of-suckerfish-horizontal {
+	display: block;
+	width: 1em;
+	border-width: 0px;
+	margin-left: 1em;
+	padding: 0;
+	padding-top: 1px;
+}
+
+/** IE5.0/win workaround: the ">" is handled like a "," */
+ul.menu > ul.menu {
+	position: absolute;
+	top: 5em;	/* change the absolute position for IE5.0 here */
+}
+ul.menu > ul.menu li.hover ul {
+	margin: 0.1em 0 0 0em;	/* top, right, bottom, left */
+}
+ul.menu > ul.menu li.hover ul ul {
+	margin: -1.6em 0 0 10em;	/* top, right, bottom, left */
+}
+
+.menu_footer {
+	display: inline;
+    list-style: none outside none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.menu_footer li {
+	float: left;
+	margin-left: 0;	
+	margin-bottom: 5px;	
+}
+
+.divider {
+	margin-left: 6px;
+	margin-right: 6px;
+	color: #dcdcdc;
+}
+
+.menu_footer a {	
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+}
+
+.menu_footer a:hover {		
+	color: #777777;	
+}
